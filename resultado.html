@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<style>
+.geralResultado {
+    display: flex;              /* Ativa o flexbox */
+    justify-content: center;    /* Centraliza horizontalmente */
+    align-items: center;        /* Alinha verticalmente */
+    gap: 40px;                  /* Espaçamento entre as divs */
+    position: relative;
+    top: 30px;
+    left: 0;                    /* Removido o -100px pra centralizar certinho */
+    text-align: center;
+}
+
+
+
+
+
+</style>
+
+<body>
+    <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >Resultado</h1>
+    <div class="geralResultado">
+        <div id="laliga_resultado" class="laliga_resultado">
+            <img id="laliga_img" src="https://upload.wikimedia.org/wikipedia/commons/4/45/LaLiga.png" width="50px" alt="">
+            <p id="numeros_de_titulos_laliga", style=" position: relative; top: -15px; left: 2px;"></p>
+        </div>
+        <div class="copa_rey_resultado">
+            <img id="copa_rey" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Copa_del_Rey_Trophy.png" width="40px" style="position: relative; top: -3px;" alt="">
+            <p id="numeros_de_titulos_copa_rey"; style="position: relative; top: -18px;"></p>
+        </div>
+        <p id="somaTudo"></p>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

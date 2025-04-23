@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayern Perfil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #904f4f;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .titulos_Bayern {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  justify-items: center;
+}
+
+
+    .titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .titulo:hover {
+      transform: scale(1.05);
+    }
+
+    .titulo img {
+      margin-bottom: 8px;
+      max-width: 60px;
+      height: auto;
+    }
+
+    .titulo p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .logo_Perfil {
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>FC Bayern</h1>
+
+  <div id="titulos_Bayern" class="titulos_Bayern">
+
+    <div id="Bundesliga_Bayern" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Icon_Trophy_Bundesliga_%281_Fu%C3%9Fball-Bundesliga%29.svg/120px-Icon_Trophy_Bundesliga_%281_Fu%C3%9Fball-Bundesliga%29.svg.png" width="50px" alt="Bundesliga">
+      <p>32x</p>
+    </div>
+
+    <div id="CopaAlemanha" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/DFB_Pokal_Trophy.png" width="35px" alt="Copa do Rei">
+      <p>20x</p>
+    </div>
+
+    <div id="SuperCopaAlemanhba" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dfl-super-cup-pokal.png/120px-Dfl-super-cup-pokal.png" width="150px" alt="SuperCopaAlemanhba">
+      <p>10x</p>
+    </div>
+
+    <div id="UCL" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/UEFA_-_Champions_League.png" width="50px" alt="Champions League">
+      <p>6x</p>
+    </div>
+
+    <div id="intercontinetal" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/IC_Trophy_2024.png/120px-IC_Trophy_2024.png" width="20px" alt="Intercontinental">
+      <p>2x</p>
+    </div>
+
+    <div id="SuperCopaUEFA" class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Supercoppaeuropea2.png" width="45px" alt="Supercopa UEFA">
+      <p>2x</p>
+    </div>
+
+    <div id="CopaMundoClubes" class="titulo">
+      <img src="https://images.seeklogo.com/logo-png/57/2/taca-club-word-cup-mundial-de-clubes-fifa-2025-logo-png_seeklogo-577677.png" width="70px" alt="Mundial de Clubes">
+      <p>0x</p>
+    </div>
+
+  </div>
+  <div id="logo_Perfil" class="logo_Perfil">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg" width="100px" alt="">
+  </div>
+
+</body>
+</html>

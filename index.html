@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classificação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #d7d6d6;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .layout {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .anuncio1 {
+      position: relative;
+      top: -15px;
+      left: -200px;
+    }
+
+    .anuncio2 {
+      position: relative;
+      top: -15px;
+      left: 200px;
+    }
+
+    .container {
+      width: 400px;
+      background: #c1cacf;
+      border: 5px solid #7f677f;
+      border-radius: 1px;
+      transform: scale(1.3);
+      transform-origin: top center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 5px 10px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #004080;
+      color: white;
+    }
+
+    .team-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .team-logo {
+      width: 19px;
+      height: 18px;
+      margin-right: 5px;
+    }
+
+    tr:hover {
+      background-color: #82965d;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .anuncio1, .anuncio2 {
+        position: static;
+        margin: 10px 0;
+      }
+
+      .container {
+        width: 100%;
+        transform: none;
+        border-width: 2px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      th, td {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 16px;
+      }
+
+      .team-logo {
+        width: 16px;
+        height: 15px;
+      }
+
+      th, td {
+        padding: 4px 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Maiores Clubes Da História</h2>
+  <div class="layout">
+    <div class="anuncio1">
+      <a href="https://limercoin.com/?ref=y92kvffv" target="_blank" rel="noopener noreferrer">
+        <img src="https://static.limercoin.com/promo/v1/dark/300x600.png" alt="Anúncio Limercoin" width="300" height="600"/> 
+      </a> 
+    </div>
+
+    <div class="container">
+      <table id="ranking-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>País</th>
+            <th>Time</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><img src="https://flagcdn.com/w40/es.png" alt="Espanha" width="20"></td><td class="team-info"><a href="realmadrid.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png"><span>Real Madrid</span></a></td><td>7950</td></tr>
+          <tr><td>2</td><td><img src="https://flagcdn.com/w40/gb.png" alt="Inglaterra" width="20"></td><td class="team-info"><a href="liverpool.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/0/0c/Liverpool_FC.svg"><span>Liverpool</span></a></td><td>3850</td></tr>
+          <tr><td>3</td><td><img src="https://flagcdn.com/w40/de.png" alt="Alemanha" width="20"></td><td class="team-info"><a href="Bayern.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg"><span>FC Bayern München</span></a></td><td>4500</td></tr>
+          <tr><td>4</td><td><img src="https://flagcdn.com/w40/es.png" alt="Espanha" width="20"></td><td class="team-info"><a href="barcelona.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/4/43/FCBarcelona.svg"><span>Barcelona</span></a></td><td>5450</td></tr>
+          <tr><td>5</td><td><img src="https://flagcdn.com/w40/it.png" alt="Itália" width="20"></td><td class="team-info"><a href="milan.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"><span>Milan</span></a></td><td>3900</td></tr>
+          <tr><td>6</td><td><img src="https://flagcdn.com/w40/gb.png" alt="Inglaterra" width="20"></td><td class="team-info"><a href="manchesterUnited.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/b/b6/Manchester_United_FC_logo.png"><span>Manchester United</span></a></td><td>3500</td></tr>
+          <tr><td>7</td><td><img src="https://flagcdn.com/w40/it.png" alt="Itália" width="20"></td><td class="team-info"><a href="internazionale.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg"><span>Inter de Milão</span></a></td><td>2750</td></tr>
+          <tr><td>8</td><td><img src="https://flagcdn.com/w40/br.png" alt="Brasil" width="20"></td><td class="team-info"><a href="flamengo.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg"><span>Flamengo</span></a></td><td>1600</td></tr>
+          <tr><td>9</td><td><img src="https://flagcdn.com/w40/pt.png" alt="Portugal" width="20"></td><td class="team-info"><a href="internacional.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/3e/Sporting_Clube_de_Portugal.png/250px-Sporting_Clube_de_Portugal.png"><span>Sporting</span></a></td><td>2300</td></tr>
+          <tr><td>10</td><td><img src="https://flagcdn.com/w40/it.png" alt="Itália" width="20"></td><td class="team-info"><a href="juventus.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg/150px-Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg.png"><span>Juventus</span></a></td><td>3700</td></tr>
+          <tr><td>11</td><td><img src="https://flagcdn.com/w40/pt.png" alt="Portugal" width="20"></td><td class="team-info"><a href="Porto.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c5/F.C._Porto_logo.png/250px-F.C._Porto_logo.png"><span>Porto</span></a></td><td>4400</td></tr>
+          <tr><td>12</td><td><img src="https://flagcdn.com/w40/gb.png" alt="Inglaterra" width="20"></td><td class="team-info"><a href="chelsea.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/c/cc/Chelsea_FC.svg"><span>Chelsea</span></a></td><td>1600</td></tr>
+          <tr><td>13</td><td><img src="https://flagcdn.com/w40/pt.png" alt="Portugal" width="20"></td><td class="team-info"><a href="Benfica.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/de/Sport_Lisboa_e_Benfica.svg/320px-Sport_Lisboa_e_Benfica.svg.png"><span>Benfica</span></a></td><td>4050</td></tr>
+          <tr><td>14</td><td><img src="https://flagcdn.com/w40/gb.png" alt="Inglaterra" width="20"></td><td class="team-info"><a href="arsenal.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/5/53/Arsenal_FC.svg"><span>Arsenal</span></a></td><td>2200</td></tr>
+          <tr><td>15</td><td><img src="https://flagcdn.com/w40/fr.png" alt="França" width="20"></td><td class="team-info"><a href="psg.html"><img class="team-logo" src="https://upload.wikimedia.org/wikipedia/pt/d/d2/Logo_PSG.png"><span>PSG</span></a></td><td>2050</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="anuncio2">
+      <a href="https://limercoin.com/?ref=y92kvffv" target="_blank" rel="noopener noreferrer">
+        <img src="https://static.limercoin.com/promo/v1/dark/300x600.png" alt="Anúncio Limercoin" width="300" height="600"/> 
+      </a> 
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const tabela = document.getElementById("ranking-table");
+      const corpo = tabela.querySelector("tbody");
+      const linhas = Array.from(corpo.querySelectorAll("tr"));
+
+      linhas.sort((a, b) => {
+        const ptsA = parseFloat(a.cells[3].textContent.replace(',', '.'));
+        const ptsB = parseFloat(b.cells[3].textContent.replace(',', '.'));
+        return ptsB - ptsA;
+      });
+
+      linhas.forEach((linha, index) => {
+        linha.cells[0].textContent = index + 1;
+        corpo.appendChild(linha);
+      });
+    });
+  </script>
+</body>
+</html>
